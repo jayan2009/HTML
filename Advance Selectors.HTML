@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Pseudo Elements </title>
+</head>
+<style>
+    /* Attribute selector */
+    input[type=text] {
+        border: 2px solid red;
+    }
+
+    /* Sibling selector */
+    ul>li {
+        color: aqua
+    }
+
+    h1+P {
+        font-size: 32px;
+        color: chartreuse;
+    }
+
+    /* Pseudo Classes */
+    a:hover {
+        color: brown;
+        font-size: 22px;
+        text-decoration: none;
+    }
+
+    /* Pseudo Elements */
+    :nth-child(2) {
+        color: rgb(248, 232, 10);
+    }
+
+    ul li::before {
+        content: "⭐"
+
+
+
+    }
+
+    a::after {
+        content: "✨"
+    }
+    p::first-letter{
+        font-size: 200%;
+        color:brown
+    }
+</style>
+
+<body>
+
+    Name <input type="text">
+    <h1>Space exploration</h1>
+    <ul>
+        <li>moon mission</li>
+        <li>satellite</li>
+        <li>spce ship</li>
+        <li>black hole</li>
+    </ul>
+    <h1>space</h1>
+    <p>a continuous area or expanse which is free, available, or unoccupied.</p>
+    <p>the star around which the planets revolve, from which they receive heat and light, and which has an average
+        distance
+        from the earth of about 93,000,000 miles (150,000,000 kilometers), a diameter of 864,000 miles (1,390,000
+        kilometers),
+        and a mass 332,000 times greater than earth.</p>
+    <a href="#">space</a>
+</body>
+
+</html>
